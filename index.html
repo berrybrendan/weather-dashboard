@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class='row'>
+        <div class='col-12'>Weather Dashboard</div>
+    </header>
+    <div class='container'>
+        <div class='col-4 searchbar'> Search for a City:
+            <form></form>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var qSearch = ''
+        var queryURL = 'https://api.openweathermap.org/data/2.5/weather?q=' + qSearch + '&appid=efcaa00e864985ab8710b6c7637084e9';
+
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
+            console.log(response);
+        });
+    </script>
+</body>
+
+</html>

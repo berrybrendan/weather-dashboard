@@ -1,0 +1,11 @@
+header{
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(58, 58, 58);
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.searchbar{
+    text-align: left;
+}
